@@ -8,7 +8,7 @@ The author created this template as managing a resume on Google Docs was hard an
 
 ```sh
 docker build -t latex .
-docker run --rm -i -v "$PWD":/data latex pdflatex Nguyen-Quoc-Bao-CV.tex
+docker run --rm -i -v "$PWD":/data latex pdflatex QuocBao-Nguyen-CV.tex
 ```
 
 ### 3. Link to Overleaf
@@ -17,7 +17,7 @@ https://www.overleaf.com/read/byqctvsjtynr
 
 ### 4. Preview
 
-![Resume Screenshot](/Nguyen-Quoc-Bao-CV.png)
+![Resume Screenshot](/QuocBao-Nguyen-CV.png)
 
 ### 5. License
 
