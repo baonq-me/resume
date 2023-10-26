@@ -14,3 +14,9 @@ Archieve/
 *.cb
 *.cb2
 .*.lb
+
+
+# pdflatex out files
+QuocBao-Nguyen-CV.aux
+QuocBao-Nguyen-CV.log
+QuocBao-Nguyen-CV.out
