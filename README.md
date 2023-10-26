@@ -11,6 +11,18 @@ docker build -t latex .
 docker run --rm -i -v "$PWD":/data latex pdflatex QuocBao-Nguyen-CV.tex
 ```
 
+Can use image `texlive/texlive` instead of manually write Dockerfile
+
+```
+docker run --rm -i -v "$PWD":/data texlive/texlive pdflatex -output-directory=/data /data/QuocBao-Nguyen-CV.tex
+```
+
+Generate PNG file for preview
+
+```
+docker run --rm -i -v "$PWD":/data dpokidov/imagemagick convert -density 300 /data/QuocBao-Nguyen-CV.pdf -quality 90 -background white -alpha remove -alpha off /data/QuocBao-Nguyen-CV.png
+```
+
 ### 3. Link to Overleaf
 
 https://www.overleaf.com/read/byqctvsjtynr
