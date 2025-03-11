@@ -29,7 +29,7 @@
 \addtolength{\oddsidemargin}{-0.345in}
 \addtolength{\evensidemargin}{-0.345in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.4in}
+\addtolength{\topmargin}{-.6in}
 \addtolength{\textheight}{1.0in}
 
 \setlength{\footskip}{4.09pt}   % don't understand
@@ -97,8 +97,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large Quoc-Bao Nguyen}} & \textit{Built by Latex, Docker. Deployed by Github Pages} \\
-  \{Software, System, Hardware\} Engineer & \href{https://github.com/baonq-me/resume}{github.com/baonq-me/resume} \textit{(v2023.10.26.1)}
+  \textbf{{\Large Quoc-Bao Nguyen}} \\ %& \textit{Built by Latex, Docker. Deployed by Github Pages} \\
+  Product Engineer & \href{https://github.com/baonq-me/resume}{github.com/baonq-me/resume} \textit{(Mar 2025)}
 \end{tabular*}
 
 
@@ -112,18 +112,16 @@
 
 
 %-----------EXPERIENCE-----------------
-\section{Working Experience \textit{(5 years, 11 months)}}
+\section{Working Experience \textit{(7 years, 4 months)}}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Zalo}{Oct 2021 - Present \textit{(2 years)}}
-      {Senior Software Engineer - Zalo Technical Group - Security \& Operations team}{}
+      {Zalo}{Oct 2021 - Present \textit{(3 years, 5 months)}}
+      {Senior Software Engineer - Zalo Technical Group - Security \& Operations}{}
       \resumeItemListStart
         \resumeItem{Security Operation Center (SOC)}
-          {Build SOC from scratch that processes billions of security events daily. Spend most of the time optimizing an ElasticSearch cluster that holds around 150 billion documents. }
-        \resumeItem{Web Application Firewall}
-          {Develop a public-facing web application firewall to protect important web pages.}            
+          {Build SOC from scratch that processes/stores billions of security events daily. Build \b{Web app firewall} from scratch. Stack: Nginx+lua, Kafka, ElasticSearch, PostgreSQL, Grafana.}       
         \resumeSubItemNormal
-          {Mentor in Zalo Tech Fresher 2022. Completed Zalo - Fulbright Leadership Development Program 2022.}
+          {Mentor, Zalo Tech Fresher 2022. Zalo - Fulbright Leadership Development Program 2022, first batch. Top 20 ZA Challenge 2023 (top 2\%). Most beloved Technical Sharing Series 2024 for a topic related to ARM server CPU.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -141,10 +139,10 @@
         \resumeItem{Key team member}
           {Support other teams and customers as well as maintain, update, design, and implement new features and train new members for the product.}
         \resumeItem{Call Routing}
-          {Build a virtual agent that routes inbound calls to the correct agent or group of agents based on voice interaction instead of key presses.}
+          {Build a virtual agent that routes inbound calls to the correct operators based on voice interaction.}
         %\resumeItem{Design API and database}
         %  {Implement APIs for Automatic Call Distributor (ACD) and Interactive Voice Response (IVR) modules. Design NoSQL schema to store configurations for these features.}
-        \resumeItem{Others}
+        \resumeItem{Awards}
           {Best employees of the quarter (Q4/2019, Q3/2020). Report several security issues to others.}
       \resumeItemListEnd
 
@@ -173,8 +171,8 @@
 %-----------PROJECTS-----------------
 \section{Open source projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{\href{https://github.com/baonq-me/WifiUnlocker}{WifiUnlocker}}
-      {Door access control system using Raspberry Pi. \href{https://github.com/baonq-me/WifiUnlocker}{https://github.com/baonq-me/WifiUnlocker}}
+    \resumeSubItem{\href{https://github.com/cve-search/cve-search/releases/tag/v5.0.0}{cve-search}}
+      {Contribute bug fixes and improvements for 5.0 release. \href{https://github.com/cve-search/cve-search/releases/tag/v5.0.0}{https://github.com/cve-search/cve-search}}
     %\resumeSubItem{\href{https://github.com/baonq-me/bgn}{Graduation Thesis}}
     %  {Somewhat homomorphic encryption over elliptic curve using the BGN cryptosystem.}
     \resumeSubItem{\href{https://github.com/search?q=repo\%3Asignalwire\%2Ffreeswitch\%20baonq5&type=code}{FreeSwitch}}
@@ -186,13 +184,11 @@
 \section{Skills / Experience}
   \resumeSubHeadingListStart
     \resumeSubItem{Languages}
-      {Primarily use Java with familiarity in Lua, Python, SQL, limited experience in Go.}
+      {Primarily use Java, familiarity in Lua, Python, SQL, limited experience in Go.}
     \resumeSubItem{Technical Skills}
-      {Linux (CentOS/Ubuntu), Nginx, Graylog, MySQL/MongoDB, ElasticSearch, Kafka, VictoriaMetrics/Grafana, FreeSwitch, OpenStack/OpenNebula/Proxmox, Ceph, Arduino/Raspberry Pi.}
+      {Linux (CentOS/Ubuntu), Nginx, Graylog, MySQL/MongoDB, ElasticSearch, Kafka, VictoriaMetrics/Grafana, FreeSwitch, Proxmox/OpenNebula/OpenStack, Ceph, Arduino/Raspberry Pi.}
     \resumeSubItem{Proficient Areas}
-      {Server hardware, Cloud infra, VoIP, Network Troubleshooting, Microservice, Web backend.}
-    %\resumeSubItem{Tools and other skills}
-    %  {JetBrains's IDEs, Wireshark, Postman, CLI tools on Linux, VirtualBox,...}
+      {Server hardware (compute/network/storage), Cloud, VoIP, Troubleshooting, Microservice.}
 \resumeSubHeadingListEnd
   
 \section{Hobbies}
@@ -200,19 +196,21 @@
     \resumeSubItemNormal
       {Research computer science topics, focusing on design and concepts of protocols and distributed systems.}
   \resumeSubItemNormal
-      {Doing electronic projects using Arduino/Raspberry Pi. Operate rack servers at both home and a tier-3 Datacenter for personal research purposes.}
+      {Doing electronic projects using Arduino/Raspberry Pi. Owner of physical rack servers and a 100Gbps Cisco switch.}
 \resumeSubHeadingListEnd
 
 \section{Social activities}
   \resumeSubHeadingListStart
     \resumeSubItemNormal
-      {Organizing a full-day tech event named Arduino Day yearly (2015-2019, 2023) that attracts few-hundreds of people.}
+      {Organize a full-day tech event named Arduino Day yearly (2015-2019, 2023) that attracts hundreds of people.}
     \resumeSubItemNormal
-      {Speak at BarCamp Saigon, Young Makers Day, Arduino Day, FOSSASIA Open Tech Summit, VNG Security Day,...}
+      {Speak at BarCamp Saigon, Arduino Day, FOSSASIA Summit, VNG Security Day, OpenInfra Day (organizer team),...}
     %\resumeSubItemNormal
     %  {Attend track Science \& Technology Innovation in Vietnam Summer School in Development 2020 at ICISE, Binh Dinh.}
     \resumeSubItemNormal
       {Attended project: \href{https://thaythuocdonghanh.vn}{Thay thuoc dong hanh} - Certificate awarded by Ministry of Science and Technology for providing technical support in the "Thay thuoc dong hanh" network supporting over 500K Covid-19 F0 patients since Aug 2021.}
+    \resumeSubItemNormal
+    {Certificate from Vietnam Association for Information Processing for contributions to Vietnam OSS community, 2024.}
 \resumeSubHeadingListEnd
 
 \section{References}
