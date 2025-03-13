@@ -29,7 +29,7 @@
 \addtolength{\oddsidemargin}{-0.345in}
 \addtolength{\evensidemargin}{-0.345in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.6in}
+\addtolength{\topmargin}{-.65in}
 \addtolength{\textheight}{1.0in}
 
 \setlength{\footskip}{4.09pt}   % don't understand
@@ -71,6 +71,16 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeSubheadingEdu}[6]{
+  \vspace{-1pt}
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubheadingNoTitle}[2]{
   \vspace{-1pt}
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -98,16 +108,18 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{{\Large Quoc-Bao Nguyen}} \\ %& \textit{Built by Latex, Docker. Deployed by Github Pages} \\
-  Product Engineer & \href{https://github.com/baonq-me/resume}{github.com/baonq-me/resume} \textit{(Mar 2025)}
+   Engineer & \href{https://github.com/baonq-me/resume}{github.com/baonq-me/resume} \textit{(Mar 2025)}
 \end{tabular*}
 
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+   \resumeSubheadingEdu
       {University of Science, Ho Chi Minh City}{}
       {Bachelor in Computer Science, Honors Program for talented students}{2014 -- 2018}
+      {Graduate thesis: Research and Application of the Homomorphic Encryption Scheme Boneh--Goh--Nissim}{}
+      
   \resumeSubHeadingListEnd
 
 
@@ -128,7 +140,7 @@
       {Tiki}{Dec 2020 - Oct 2021 \textit{(11 months)}}
       {Software Development Engineer I - Marketplace Department}{}
       \resumeItemListStart
-        \resumeItem{Seller Operation team}
+        \resumeItem{Seller Operation}
           {Extend backend APIs to handle complex and fast-growing e-commerce businesses.}    
       \resumeItemListEnd
       
@@ -140,18 +152,9 @@
           {Support other teams and customers as well as maintain, update, design, and implement new features and train new members for the product.}
         \resumeItem{Call Routing}
           {Build a virtual agent that routes inbound calls to the correct operators based on voice interaction.}
-        %\resumeItem{Design API and database}
-        %  {Implement APIs for Automatic Call Distributor (ACD) and Interactive Voice Response (IVR) modules. Design NoSQL schema to store configurations for these features.}
         \resumeItem{Awards}
           {Best employees of the quarter (Q4/2019, Q3/2020). Report several security issues to others.}
       \resumeItemListEnd
-
-    %\resumeSubheadingNoTitle
-    %  {Associate Software Engineer - Cloud Call Center}{Aug 2018 - Apr 2019}
-      %\resumeItemListStart
-        %\resumeItem{Small tasks}
-        %  {Design database schema and implement APIs in Java for backend system. They are mostly CURD tasks.}
-      %\resumeItemListEnd
 
     \resumeSubheading
       {Vietnix JSC}{Mar 2017 - Apr 2018 \textit{(1 year, 2 months)}}
@@ -160,7 +163,7 @@
         \resumeItem{SIEM project}
           {Configure OSSEC agent and AlienVault OSSIM by writing alert rules using regex.}
         \resumeItem{OpenStack and OpenNebula}
-          {R\&D project for use as a public cloud service.}
+          {R\&D solution for use as a public cloud service.}
         \resumeItem{WHMCS}
         {Write a provisioning module in PHP for WHMCS to integrate with OpenNebula.}
       \resumeItemListEnd
@@ -184,11 +187,11 @@
 \section{Skills / Experience}
   \resumeSubHeadingListStart
     \resumeSubItem{Languages}
-      {Primarily use Java, familiarity in Lua, Python, SQL, limited experience in Go, C/C++.}
+      {Primarily use Java, familiarity in Lua, Python, SQL, limited experience in Go.}
     \resumeSubItem{Technical Skills}
-      {Linux (CentOS/Ubuntu), Nginx, Graylog, MySQL/MongoDB, ElasticSearch, Kafka, VictoriaMetrics/Grafana, FreeSwitch, Proxmox/OpenNebula/OpenStack, Ceph, Arduino/Raspberry Pi.}
+      {Linux, Nginx, Graylog, MySQL/MongoDB, ElasticSearch, Kafka, VictoriaMetrics/Grafana, FreeSwitch, Proxmox/OpenNebula, K8s (via snap) + Wireguard, Ceph, Arduino/Raspberry Pi.}
     \resumeSubItem{Proficient Areas}
-      {Server hardware (compute/network/storage), Cloud, VoIP, Troubleshooting, Microservice.}
+      {Server hardware (compute/network/storage), Cloud, low latency GPU infer at large scale, VoIP.}
 \resumeSubHeadingListEnd
   
 \section{Hobbies}
@@ -196,7 +199,7 @@
     \resumeSubItemNormal
       {Research computer science topics, focusing on design and concepts of protocols and distributed systems.}
   \resumeSubItemNormal
-      {Doing electronic projects using Arduino/Raspberry Pi. Owner of physical rack servers and a 100Gbps Cisco switch.}
+      {Doing electronic projects using Arduino/Raspberry Pi. Owner of physical rack servers and a QSFP28 Cisco switch.}
 \resumeSubHeadingListEnd
 
 \section{Social activities}
